@@ -17,3 +17,5 @@ Game essence:
 Move mouse into white ball to push it.
 
 Pause the game and click on white ball to change it color.
+
+Adjust the force by moving slider on bottom.
