@@ -1,5 +1,4 @@
 import Vector2 from './Vector';
-import { canvasHeight, canvasWidth } from './util';
 
 class Circle {
   private ctx: CanvasRenderingContext2D;
@@ -20,9 +19,6 @@ class Circle {
   }
 
   drawCircle = () => {
-    //This cause to clear full canvas and not show second ball
-    //This cause to clear full canvas and not show second ball
-    // this.ctx.clearRect(0,0, canvasWidth, canvasHeight);
     this.ctx.beginPath();
     this.ctx.beginPath();
     this.ctx.arc(this.position.x, this.position.y, this.radius, 0, Math.PI / 180 * 360);
@@ -45,6 +41,14 @@ class Circle {
     this.ctx.strokeStyle = 'yellow';
     this.ctx.stroke();
     this.ctx.closePath();
+  }
+
+  move = () => {
+    this.acc = this.acc.normalized().mult(this.acceleration);
+    this.vel = this.vel.add(this.acc);
+    this.vel = this.vel.mult(1 - this.friction);
+
+    this.position = this.position.add(this.vel);
   }
 }
 

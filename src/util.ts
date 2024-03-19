@@ -1,14 +1,6 @@
 import Circle from './Circle';
 import Vector2 from './Vector';
 
-export const enum Colors {
-  RED = 'red',
-  BLACK = 'black',
-  BLUE = 'blue',
-  GREEN = 'green',
-  PURPLE = 'purple',
-}
-
 export const canvasWidth = 600;
 export const canvasHeight = 800;
 
