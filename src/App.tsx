@@ -124,6 +124,7 @@ function App() {
       <div className="colors-container hidden" ref={popUp}>
         <input type="color" name="color" id="color" value={color} onChange={(e) => setColor(e.currentTarget.value)}/>
       </div>
+      <a href="https://github.com/ChandeOk/billiard-test">How to play</a>
     </>
   )
 }
