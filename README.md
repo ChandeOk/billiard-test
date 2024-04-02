@@ -13,6 +13,7 @@ Game essence:
 [Demo link](https://chandeok.github.io/billiard-test/)
 
 ## Controls
+*If not working try to zoom out. I will fix it later.
 
 Move mouse into white ball to push it.
 
